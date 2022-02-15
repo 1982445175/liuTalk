@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Value;
 @JsonInclude
 @Data
 public class Header {
-    @Value("${header.toid}")
     private int toid;
 
     public String toString() {
