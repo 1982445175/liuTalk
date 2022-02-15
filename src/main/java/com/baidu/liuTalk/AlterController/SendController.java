@@ -55,7 +55,7 @@ public class SendController {
     }
     public static String sendHttpPost(String JSONBody) throws Exception {
         CloseableHttpClient httpClient = HttpClients.createDefault();
-        HttpPost httpPost = new HttpPost("http://apiin.im.baidu.com/api/msg/groupmsgsend?access_token=d8ed33d206ef819761327d3c30df4b1a1");
+        HttpPost httpPost = new HttpPost("http://apiin.im.baidu.com/api/msg/groupmsgsend?access_token=");
         httpPost.addHeader("Content-Type", "application/json");
         httpPost.setEntity(new StringEntity(JSONBody));
         CloseableHttpResponse response = httpClient.execute(httpPost);
